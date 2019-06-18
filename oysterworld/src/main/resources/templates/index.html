@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/stylesheet.css"/>
     <link rel="stylesheet" href="css/responsive.css"/>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="js/caution.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
   </head>
   <body>
     <header>
@@ -17,23 +20,23 @@
         <span class="menu-icon fa fa-bars"></span>
 
         <div class="header-right">
-          <a href="#">ほげほげ</a>
-          <a href="#">ふがふが</a>
-          <a href="#" class="dummy">hogefuga</a>
+          <a href="dummy.html" th:href="@{/dummy}">ほげほげ</a>
+          <a href="dummy.html" th:href="@{/dummy}">ふがふが</a>
+          <a href="dummy.html" th:href="@{/dummy}" class="dummy">hogefuga</a>
         </div>
       </div>
     </header>
-    <div class="top-wrapper">
+    <div id="bgp" class="top-wrapper">
       <div class="container">
         <h1>HELLO EVERYONE.</h1>
         <h1>WELCOME TO MY SITE.</h1>
         <p>ここは練習用ホームページです。</p>
         <p>想像以上に自分の学習能力が低くてショックを受けています。</p>
         <div class="btn-wrapper">
-          <a href="dummy.html" class="btn yokunai">よくないね！</a>
+          <a href="dummy.html" th:href="@{/dummy}" class="btn yokunai">よくないね！</a>
           <p>or</p>
-          <a href="dummy.html" class="btn facebook"><span class="fa fa-facebook"></span>Facebookを押せ！</a>
-          <a href="dummy.html" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで拡散するな！</a>
+          <a href="#" onclick="caution()" class="btn facebook"><span class="fa fa-facebook"></span>Facebookを押してくれ！</a>
+          <a href="dummy.html" th:href="@{/dummy}" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで拡散するなぁ！</a>
         </div>
       </div>
     </div>
@@ -81,7 +84,7 @@
           <h2>あなたも一緒に遊び呆けてみませんか?</h2>
           <h3>働いたら負けだゾ</h3>
         </div>
-        <span class="btn message col">遊び呆ける</span>
+        <a href="dummy.html" th:href="@{/dummy}"><span class="btn message col">遊び呆ける</span></a>
       </div>
     </div>
     <footer>
@@ -90,5 +93,6 @@
         <p>If you work, you lose.</p>
       </div>
     </footer>
+
   </body>
 </html>

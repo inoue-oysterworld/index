@@ -24,7 +24,7 @@ a {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(../image/haikei.jpg);
+  background-image: url(../image/haikei1.jpg);
   background-size: cover;
   color: white;
   text-align: center;
@@ -153,7 +153,7 @@ header {
 
 .task-icon p {
   position: absolute;
-  top: 44%;
+  top: 35%;
   width: 100%;
   color: white;
 }
@@ -201,6 +201,7 @@ footer p {
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .col{
